@@ -10,7 +10,7 @@ Sentiment analysis is a valuable feature for exploratory data analysis (EDA) and
 # Files
 1. sentiment_analysis_code.r: Contains the code for performing sentiment analysis on the dataset.
 2. project.r: Main script that handles data preprocessing, feature extraction, and model training for category prediction.
-3. predictive_subcategory.r: Focuses on predicting subcategories of news articles and evaluating the impact of sentiment scores on model performance.
+3. predictive_subcategory.r: Focuses on predicting subcategories of news articles.
 
 # Installation
 To run the R code in this project, you need to install the following packages:
@@ -19,9 +19,10 @@ install.packages(c("tidytext", "text2vec", "devtools", "e1071", "dplyr", "caret"
                    "textstem", "stringr", "gmodels", "magrittr", "FSelector", "randomForest", 
                    "FactoMineR", "tidyr", "tm", "scales", "syuzhet", "sentimentr", 
                    "RColorBrewer", "wordcloud", "ggplot2", "lubridate"))
+                   
 Ensure all these packages are installed before running the scripts to avoid any issues with missing dependencies.
 
 # Usage
-Start with sentiment_analysis_code.r to perform sentiment analysis on the dataset.
-Run project.r to preprocess the data, extract features, and train models for category prediction.
-Execute predictive_subcategory.r to focus on subcategory prediction and evaluate the role of sentiment scores.
+1. Start with sentiment_analysis_code.r to perform sentiment analysis on the dataset.
+2. Run project.r to preprocess the data, extract features, and train models for category prediction.
+3. Execute predictive_subcategory.r to focus on subcategory prediction.
