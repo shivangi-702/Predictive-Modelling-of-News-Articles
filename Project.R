@@ -182,7 +182,7 @@ tfidf_dtm_new <- removeSparseTerms(tfidf_dtm, 0.95) # terms with sparsity above 
 term_freqs <- colSums(as.matrix(tfidf_dtm_new)) # sum frequencies for each term
 freq_words <- names(term_freqs[term_freqs >= 5]) # select terms with frequency >= 5
 tfidf_dtm_new <- tfidf_dtm_new[ , freq_words] # subset dtm with only frequent terms 
-ncol(tfidf_dtm) # dimensions 127668
+ncol(tfidf_dtm) # dimensions 983
 pca <- PCA(as.matrix(tfidf_dtm_new), ncp = 500)  # reduce to 500 dimensions
 reduced_features <- pca$ind$coord
 length(reduced_features)
